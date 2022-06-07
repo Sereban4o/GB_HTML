@@ -42,6 +42,39 @@ a {
     gap: 33px;
 }
 
+.breadcrumb {
+    background: #F8F3F4;
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+
+.breadcrumb__heading {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.breadcrumb__links li {
+    list-style: none;
+    white-space: pre;
+}
+
+.breadcrumb__links ul {
+    display: flex;
+}
+
+.breadcrumb__link {
+    color: #636363;
+}
+
+.breadcrumb__link span {
+    color: #F16D7F
+}
+
 .promo {
     display: flex;
     background: #F1E4E6;
@@ -160,7 +193,37 @@ a {
 
 .product {
     background-color: #F8F8F8;
+    position: relative;
+}
+
+.product:hover .product__img {
+    filter: brightness(0.5);
+}
+
+.product:hover .product__add {
+    display: flex;
+}
+
+.product__add {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    width: 139px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    border: 1px solid #fff;
     ;
+}
+
+.product__add:hover {
+    box-shadow: 0 0 5px #fff;
 }
 
 .product__info {
@@ -176,6 +239,7 @@ a {
     line-height: 16px;
     color: #000000;
     padding-bottom: 16px;
+    display: inline-block;
 }
 
 .product__info__text {
@@ -208,6 +272,11 @@ a {
     line-height: 19px;
     color: #F26376;
     padding: 14px 38px;
+}
+
+.button__text:hover {
+    color: #FFFFFF;
+    background-color: #F16D7F;
 }
 
 .footer {
@@ -331,6 +400,23 @@ a {
     padding: 24px 0;
 }
 
+.social__img svg path {
+    fill: #000000;
+}
+
 .social__img {
     background: #FFFFFF;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__img:hover svg path {
+    fill: #fff;
+}
+
+.social__img:hover {
+    background: #F16D7F;
 }
