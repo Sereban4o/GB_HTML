@@ -4,6 +4,7 @@
         padding-right: calc(50% - 367px)
 
     .header
+        max-height: 74px
         &__checkbox:checked ~ .mobile-menu
             transform: scale(1)
 
@@ -31,12 +32,14 @@
         &__item
             &_big
                 min-height: 116px
-    .products__text
-        padding-bottom: 74px
-    .products__items
-        grid-template-columns: repeat(2, 1fr)
-        gap: 16px
-        padding-bottom: 32px
+    .products
+
+        &__text
+            padding-bottom: 74px
+        &__items
+            grid-template-columns: repeat(2, 1fr)
+            gap: 16px
+            padding-bottom: 32px
     .button
         padding-bottom: 65px
     .footer
@@ -59,5 +62,72 @@
         &__form
             padding-top: 0px
             padding-bottom: 0px
+            &__heading
+                line-height: 162%
             &__subheading
                 padding-bottom: 27px
+
+@media (max-width: 375px)
+    .center
+        padding-left: calc(50% - 172px)
+        padding-right: calc(50% - 172px)
+    .header
+        &__right
+            display: none
+            &_mobile
+                display: flex
+                align-items: center
+    .promo
+        height: 363px
+        align-items: center
+        justify-content: center
+        &__img
+            display: none
+        &__title
+            font-size: 38px
+            line-height: 46px
+        &__heading
+            font-size: 20px
+            line-height: 24px
+        &__content
+            padding-left: 0px
+    .sale
+        gap: 32px
+        grid-template-columns: repeat(1, 1fr)
+        padding-bottom: 64px
+        &__item_big
+            min-height: 111px
+    .big_img
+        height: 111px
+        object-fit: cover
+    .products
+        &__text
+            padding-bottom: 65px
+        &__items
+            grid-template-columns: repeat(1, 1fr)
+            padding-bottom: 41px
+    .button
+        padding-bottom: 96px
+    .footer
+        padding-bottom: 81px
+        gap: 46px
+        &__item
+            width: 300px
+    .subscribe
+        gap: 59px
+        padding-bottom: 109px
+        &__text
+            font-size: 18px
+            line-height: 22px
+        &__form__heading
+            line-height: 153.2%
+        &__form__subheading
+            padding-bottom: 22px
+    .socials
+        flex-direction: column-reverse
+        &__icons
+            padding: 43px 0 0 0
+            align-self: center
+    .social__text
+        padding: 40px 0 9px 0
+        align-self: center

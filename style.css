@@ -52,6 +52,9 @@ input[type=number] {
   align-items: center;
   gap: 33px;
 }
+.header__right_mobile {
+  display: none;
+}
 .header__checkbox {
   position: absolute;
   visibility: hidden;
@@ -334,7 +337,6 @@ input[type=number] {
 }
 
 .products {
-  padding-bottom: 48px;
   text-align: center;
   position: relative;
 }
@@ -956,6 +958,9 @@ input[type=number] {
     padding-right: calc(50% - 367px);
   }
 
+  .header {
+    max-height: 74px;
+  }
   .header__checkbox:checked ~ .mobile-menu {
     transform: scale(1);
   }
@@ -992,7 +997,6 @@ input[type=number] {
   .products__text {
     padding-bottom: 74px;
   }
-
   .products__items {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -1029,7 +1033,107 @@ input[type=number] {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .subscribe__form__heading {
+    line-height: 162%;
+  }
   .subscribe__form__subheading {
     padding-bottom: 27px;
+  }
+}
+@media (max-width: 375px) {
+  .center {
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
+  }
+
+  .header__right {
+    display: none;
+  }
+  .header__right_mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .promo {
+    height: 363px;
+    align-items: center;
+    justify-content: center;
+  }
+  .promo__img {
+    display: none;
+  }
+  .promo__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .promo__heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .promo__content {
+    padding-left: 0px;
+  }
+
+  .sale {
+    gap: 32px;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 64px;
+  }
+  .sale__item_big {
+    min-height: 111px;
+  }
+
+  .big_img {
+    height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .products__text {
+    padding-bottom: 65px;
+  }
+  .products__items {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 41px;
+  }
+
+  .button {
+    padding-bottom: 96px;
+  }
+
+  .footer {
+    padding-bottom: 81px;
+    gap: 46px;
+  }
+  .footer__item {
+    width: 300px;
+  }
+
+  .subscribe {
+    gap: 59px;
+    padding-bottom: 109px;
+  }
+  .subscribe__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .subscribe__form__heading {
+    line-height: 153.2%;
+  }
+  .subscribe__form__subheading {
+    padding-bottom: 22px;
+  }
+
+  .socials {
+    flex-direction: column-reverse;
+  }
+  .socials__icons {
+    padding: 43px 0 0 0;
+    align-self: center;
+  }
+
+  .social__text {
+    padding: 40px 0 9px 0;
+    align-self: center;
   }
 }/*# sourceMappingURL=style.css.map */
