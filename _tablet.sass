@@ -1,0 +1,63 @@
+@media (max-width: 768px)
+    .center
+        padding-left: calc(50% - 367px)
+        padding-right: calc(50% - 367px)
+
+    .header
+        &__checkbox:checked ~ .mobile-menu
+            transform: scale(1)
+
+    .mobile-menu
+        transform: scale(0)
+
+    .promo
+
+        &__info
+            margin-top: 0
+        &__content
+            display: flex
+            align-items: center
+            padding-left: 39px
+        &__title
+            font-size: 44px
+            line-height: 53px
+        &__heading
+            font-size: 24px
+            line-height: 29px
+
+    .sale
+        gap: 19px
+        padding-bottom: 109px
+        &__item
+            &_big
+                min-height: 116px
+    .products__text
+        padding-bottom: 74px
+    .products__items
+        grid-template-columns: repeat(2, 1fr)
+        gap: 16px
+        padding-bottom: 32px
+    .button
+        padding-bottom: 65px
+    .footer
+        flex-direction: column
+        padding-top: 48px
+        padding-bottom: 64px
+        gap: 48px
+        &__item
+            padding-top: 0px
+            padding-bottom: 0px
+            width: 360px
+            align-self: center
+    .subscribe
+        flex-direction: column
+        align-items: center
+        gap: 48px
+        padding-bottom: 219px
+        &__item
+            padding-top: 54px
+        &__form
+            padding-top: 0px
+            padding-bottom: 0px
+            &__subheading
+                padding-bottom: 27px
