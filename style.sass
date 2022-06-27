@@ -5,6 +5,9 @@
 
 body
     font-family: 'Lato', sans-serif
+    min-height: 100vh
+    display: flex
+    flex-direction: column
 
 img
     max-width: 100%
@@ -13,12 +16,6 @@ a
     text-decoration: none
     &:hover
         color: $colorSite
-/*input[type=number]::-webkit-inner-spin-button,*/
-/*input[type=number]::-webkit-outer-spin-button
- -webkit-appearance: none
- -moz-appearance: none
- appearance: none
- margin: 0*/
 
 input[type=number]
     -moz-appearance: textfield
@@ -27,6 +24,8 @@ input[type=number]
     padding-left: calc(50% - 570px)
     padding-right: calc(50% - 570px)
 
+.top
+    flex-grow: 1
 .header
     min-height: 75px
     background: $colorContent
@@ -52,20 +51,28 @@ input[type=number]
         visibility: hidden
         left: -9999999px
     &__checkbox:checked ~ .mobile-menu
-        transform: scale(0)
+        transform: scale(1)
 
 .mobile-menu
     position: absolute
     top: 75px
     right: 0
     z-index: 1
-    transform: scale(1)
+    transform: scale(0)
     transition: transform 0.6s
     width: $widthMobileMenu
     background: #FFFFFF
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
     padding: 32px
     box-sizing: border-box
+    &__link-site
+        align-items: center
+        justify-content: space-around
+        background-color: #e8e8e8
+        padding: 8px
+        border-radius: 10px
+        margin-bottom: 24px
+        display: none
     &__heading
         font-style: normal
         font-weight: 700
@@ -389,7 +396,7 @@ input[type=number]
         &__box
             background: $colorWhite
             border: 1px solid #EAEAEA
-            width: $widthSite
+            max-width: $widthSite
             display: flex
             flex-direction: column
             align-items: center

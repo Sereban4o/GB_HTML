@@ -5,11 +5,18 @@
 
     .header
         max-height: 74px
+        &__right
+            display: none
+            &_mobile
+                display: flex
+                align-items: center
         &__checkbox:checked ~ .mobile-menu
             transform: scale(1)
 
     .mobile-menu
         transform: scale(0)
+        &__link-site
+            display: flex
 
     .promo
 
@@ -66,8 +73,46 @@
                 line-height: 162%
             &__subheading
                 padding-bottom: 27px
+    .pagination
+        padding-bottom: 64px
+    .product__page__info
+        margin-top: 623px
+        padding-left: 0
+        padding-right: 0
+    .product__page__text
+        padding-left: 106px
+        padding-right: 106px
+    .cart
+        padding-top: 59px
+        &__box
+            display: flex
+            flex-direction: column
+            gap: 104px
+        &__product__info
+            width: 472px
+        &__buttons
+            gap: 50px
+            justify-content: center
+        &__forms
+            display: flex
+            gap: 16px
+        &__button
+            margin-bottom: 0
+    .registration__box
 
-@media (max-width: 375px)
+        gap: 22px
+    .registration__text
+        font-size: 16px
+        line-height: 19px
+
+@media (max-width: 767px)
+    .head
+        display: flex
+        flex-direction: column
+        gap: 32px
+        padding-top: 24px
+        padding-bottom: 46px
+        box-sizing: border-box
     .center
         padding-left: calc(50% - 172px)
         padding-right: calc(50% - 172px)
@@ -131,3 +176,51 @@
     .social__text
         padding: 40px 0 9px 0
         align-self: center
+    .product__page__text
+        padding-left: 24px
+        padding-right: 24px
+    .product__page__summary
+        font-size: 10px
+        line-height: 12px
+    .big__hr
+        width: 174px
+    .cart
+        &__forms
+            gap: 48px
+            flex-direction: column
+            align-items: center
+        &__product__info
+            width: 214px
+            padding-left: 17px
+            padding-top: 13px
+            padding-right: 12px
+        &__product__img
+            width: 144px
+        &__product__info__heading
+            font-size: 16px
+            line-height: 19px
+        &__product__heading__box
+            padding-bottom: 25px
+        &__product__details
+            font-size: 14px
+            line-height: 17px
+            gap: 4px
+            margin-bottom: 38px
+        &__buttons
+            padding-top: 30px
+            gap: 9px
+        &__button__footer__link
+            font-size: 12px
+            line-height: 14px
+            padding: 8px 17px
+        &__box
+            gap: 56px
+
+    .close_img svg
+        width: 11px
+        height: 11px
+    .cart__reg__heading
+        padding-top: 26px
+    .registration__box
+        flex-direction: column
+        align-items: center
